@@ -3,7 +3,7 @@ package com.anilpaudel.newsapp.room
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.anilpaudel.newsapp.data.local.NewsDao
-import com.anilpaudel.newsapp.model.Article
+import com.anilpaudel.domain.Article
 
 /**
  * Created by Anil Paudel on 28/08/2025.

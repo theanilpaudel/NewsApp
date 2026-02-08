@@ -25,14 +25,15 @@ This app fetches news from **NewsAPI**, allows users to save favorite articles, 
 
 The app follows a **Clean MVVM (Model-View-ViewModel)** approach with **Use Cases** for business logic:
 
-- **Model**
-  - Data classes (`Article`, `Source`, `NewsResponse`, `SourceResponse`).
+- **data**
+  - Data classes.
   - Repositories handle fetching data from **API**, **Room**, or **DataStore**.
 
-- **Use Cases**
+- **domain**
   - Encapsulate a **single unit of business logic**.
   - Examples: fetching headlines, saving an article, retrieving persisted sources.
   - Keeps ViewModels slim and ensures testability.
+  - DTOs
 
 - **ViewModel**
   - Consumes **use cases**.
@@ -148,18 +149,6 @@ Examples in this project:
 
 ---
 
-## Testing
-
-- **Unit Tests**
-  - ViewModels & use cases tested with **JUnit4** and **Turbine**.
-- **UI Tests**
-  - Jetpack Compose testing (`createComposeRule`).
-  - Room database testing (`inMemoryDatabaseBuilder`)
-  - Snackbar assertions.
-- **Fake Repositories** for isolated API testing.
-
----
-
 ## Design Choices
 
 1. **Jetpack Compose** for declarative UI.
@@ -177,6 +166,7 @@ Examples in this project:
 ## Future Improvements
 - UI fixes for selected sources in **SourcesScreen**
 - Display selected sources in **NewsScreen** with option to deselect
+- Writing Test cases
 - Utilizing Hilt to install/uninstall test modules and increasing test coverage
 
 ---

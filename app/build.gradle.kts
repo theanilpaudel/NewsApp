@@ -53,7 +53,8 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":features"))
+    implementation(project(":di"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -64,11 +65,11 @@ dependencies {
     implementation(libs.androidx.material3)
 
     implementation(libs.bundles.dagger.hilt)
+    kapt(libs.dagger.hiltcompiler)
     implementation(libs.coil.compose)
     implementation(libs.coil.okhttp)
     implementation(libs.datastore)
     implementation(libs.ui.test.junit4)
-    kapt(libs.dagger.hiltcompiler)
     implementation(libs.bundles.compose)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.compose.material)

@@ -5,7 +5,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import com.anilpaudel.newsapp.HiltTestActivity
-import com.anilpaudel.newsapp.model.Article
+import com.anilpaudel.domain.Article
 import com.anilpaudel.newsapp.screens.NewsWebViewScreen
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest

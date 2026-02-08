@@ -6,7 +6,7 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.anilpaudel.newsapp.data.AppDatabase
 import com.anilpaudel.newsapp.data.local.NewsDao
-import com.anilpaudel.newsapp.model.Article
+import com.anilpaudel.domain.Article
 import com.google.common.truth.Truth.assertThat
 import org.junit.After
 import org.junit.Before

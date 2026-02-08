@@ -17,10 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.anilpaudel.newsapp.navigation.MyNavHost
-import com.anilpaudel.newsapp.navigation.bottomNavItems
+import com.anilpaudel.features.MyNavHost
+import com.anilpaudel.features.bottomNavItems
 import com.anilpaudel.newsapp.ui.theme.NewsAppTheme
-import com.anilpaudel.newsapp.ui.theme.White
+import com.anilpaudel.features.White
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
